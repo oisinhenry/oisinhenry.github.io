@@ -1,37 +1,30 @@
+/*stylesheet for small displays. wasn't sure if we had to do this or not so it's far from perfect */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+ 
 
-/* DON'T FORGET TO LOOK AT THE INSTRUCTIONS.MD FILE IN GITHUB */
 html {
 	font-family: "Open Sans", "Roboto" Helvetica, "Droid sans", sans-serif;
 	font-size: 100%;
-
 	box-sizing: border-box;
  }
+ 
+/* Font-family gives an "incorrect operator" error when validating which seems to be a known bug with the w3c validator. */
 
-  /* Font-family gives an error when validating which seems to be a known bug. */
-
- *, *:before, *:after {
-  box-sizing: inherit;
-}
-
+ 
 /* These are some suggested groupings for your stylesheet... */
 /* box sizing */
-
-
+*, *:before, *:after {box-sizing: inherit;}
 /* element styling (e.g. standard p, h1, h2, a, etc) */
-
-
-    
 .header-content {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  text-align: center;
-  width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	width: 90%;
  }
-
+ 
 .content {
 	margin-left: auto;
 	margin-right: auto;
@@ -39,7 +32,7 @@ html {
 	margin-bottom: 3px;
 	text-align: center;
  }
-
+ 
 .page-nav {
 	margin-left: auto;
 	margin-right: auto;
@@ -48,7 +41,7 @@ html {
 	text-align: center;
 	width: 100%;
  }
-
+ 
 .header-content {
 	margin-left: auto;
 	margin-right: auto;
@@ -57,10 +50,7 @@ html {
 	text-align: center;
 	width: 47%;
  }
-
-
-
-
+ 
 .footer-content {
 	margin-left: auto;
 	margin-right: auto;
@@ -68,7 +58,7 @@ html {
 	margin-bottom: 3px;
 	text-align: center;
  }
-
+ 
 .container-content {
 	margin-left: auto;
 	margin-right: auto;
@@ -76,30 +66,30 @@ html {
 	margin-bottom: 3px;
 	text-align: center;
  }
-
+ 
 h1 {
-	color: #E5989B;
+	color: #99aab5;
 	font-family: "Roboto";
-	font-size: 50px;
+	font-size: 75px;
 	font-weight: 300;
+	width: 100%;
  }
-
+ 
 p {
-	color: #FFB4A2;
-	font-family: "Open Sans"
+	color: #ffffff;
+	font-family: "Open Sans";
+	width: 100%;
  }
-
+ 
 h2 {
-	color: #E5989B;
+	color: #99aab5;
 	font-family: "Roboto";
-	width:100%;
+	margin: 10px 0 20px;
+	width: 100%;
  }
-
-
-body {background-color: #6D6875;
-
-}
-
+ 
+body {background-color: #2C2F33;}
+ 
 .contact-me.container {
 	width: 40%;
 	margin-left: auto;
@@ -109,8 +99,9 @@ body {background-color: #6D6875;
 	text-align: center;
 	padding-bottom: 20px;
 	padding-top: 20px;
+	font-family: "Open Sans"
  }
-
+ 
 .image-gallery.container {
 	width: 40%;
 	margin-left: auto;
@@ -118,109 +109,102 @@ body {background-color: #6D6875;
 	margin-top: 3px;
 	margin-bottom: 3px;
 	text-align: center;
+	font-family: "Open Sans"
  }
-
- .about-me.container {
+ 
+.about-me.container {
 	width: 90%;
 	text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 40px;
 	font-family: "Roboto";
 	margin-bottom: 5px;
  }
-
+ 
 .work-experience.container {
 	width: 90%;
 	text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 30px;
 	padding-top: 30px;
 	font-family: "Roboto"
  }
-
-
-
+ 
 .page-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
-  align-content: center;
-
-}
-
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+ }
+ 
 button {
-	background-color: #FFB4A2; /* Green */
+	background-color: #2C2F33; /* Green */
 	border: none;
-	color: #6D6875;
-	padding: 0;
+	color: #ffffff;
+	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	width: auto;
-	min-height:40px;
+	width: 100%;
+	font-size: 100%;
+	font-family: "Roboto";
+	font-weight: Bold;
+	border: 2px solid #99aab5;
+ }
+ 
+	button:hover {
+		background-color: #2C2F33;
+		border: 2px solid #ffffff;
+	 }
+ 
+button[type=submit] {
+	width: 100%;
+	height: auto;
+ }
+ 
+.submit:hover {background-color: #9EA79C;}
+ 
+.page-footer {
 	font-size: 14px;
 	font-family: "Open Sans";
  }
-
-	button:hover {background-color: #FFCDB2;}
-
-button[type=submit] {
-	width: 80%;
-	height: 20px;
- }
-
-.submit:hover {background-color: #9EA79C;}
-
-
-
-
-
-
-
-.image-gallery.container {
-	width: 40%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	text-align: center;
- }
- .gallery {
-	width: auto;
+ 
+.gallery {
+	width: 100%;
 	margin: 0 auto;
-	padding: 0;
-	background: #6D6875;
-	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+	padding: 5px; 
  }
-
+ 
 	.gallery > div {
+		display: inline-flex;
 		position: relative;
-		float: left;
+		justify-content: center;
+		flex-wrap: nowrap;
 		padding: 5px;
 	 }
-
+ 
 		.gallery > div > img {
 			display: block;
 			width: auto;
 			height: 200px;
 			transition: .1s transform;
-			transform: translateZ(0); /* hack */
+			transform: translateZ(0); 
 		 }
-
+ 
 		.gallery > div:hover {z-index: 1;}
-
+ 
 			.gallery > div:hover > img {
 				transform: scale(1.7,1.7);
 				transition: .3s transform;
 			 }
-
+ 
 .cf:before, .cf:after {
 	display: table;
 	content: "";
 	line-height: 0;
  }
-
+ 
 .cf:after {clear: both;}
