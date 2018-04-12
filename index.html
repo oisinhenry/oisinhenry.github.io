@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tags for Internet Explorer and mobile devices -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts -->
+
+    <link rel="stylesheet" media='screen and (min-width: 1080px)' href="css/layout.css" /> 
+    <link rel='stylesheet' media='screen and (min-width: 200px) and (max-width: 1020px)' href='css/mobile.css' /></head>
+
+<body>
+<div id="left"></div>
+<div id="right"></div>
+
+
+
+    <main>
+        <header class="page-header">
+            <div class="header-content">
+                <h1>My Portfolio</h1>
+                <h2><span>Oisin Henry</span></h2>
+            </div>
+        </header>
+
+
+
+        <nav class="page-nav">
+            
+                <a href="#about"><button>About Me</button></a>
+                <a href="#work"><button>Work Experience</button></a>
+                <a href="#images"><button>Image Gallery</button></a>
+                <a href="#contact"><button>Contact Me</button></a>
+            
+        </nav>
+       
+        <section id="about" class="about-me container">
+            <div class="container-content">
+                <h2><span>About Me</span></h2>
+                <div class="content">
+                    <!-- add your 150 word maximum About Me content here -->
+                    <p>My name is Oisin Henry. I am a first year student studying Computer Applications in DCU.</p>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2><span>Work Experience</span></h2>
+                <div class="content">
+                    <!-- add your 200 word maximum work experience content here -->
+                    <p>In Transition Year, I spent two weeks at LocalSocial, a mobile proximity platform for retailers. My responsibilities included manual app testing and a limited amount of debugging code and testing new features.</p>
+                </div>
+            </div>
+        </section>
+        <section id="images" class="image-gallery container">
+            <div class="container-content">
+                <h2><span>Image Gallery</span></h2>
+                <p>Here's some photos of me wearing a suit in various locations.</p>
+               <div class="gallery cf">
+  <div>
+    <img src="images/suit1.jpg" alt="Me at my secondary school graduation" />
+  </div>
+  <div>
+    <img src="images/suit2.jpg" alt="Another photo of me at my graduation with a friend of mine" />
+  </div>
+  <div>
+    <img src="images/suit3.jpg" alt ="Me going to a debs recently"/>
+  </div>
+
+</div>
+            </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2><span>Contact Me</span></h2>
+                <div class="content">
+                    <form action="https://formspree.io/[your email address goes here]" method="post">
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                        
+                            <button type="submit" value="send my message" id = "submit" <label>Send My Message</label> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="footer-content">
+                <p> <span class="footer-text">&copy; <a href="dcu.ie/">DCU 2017</a>
+    </span> <span class="footer-separator">&middot;</span> <span class="footer-text">Oisin Henry</span> <span class="footer-separator">&middot;</span> <span class="footer-text">This is student coursework</span> <span class="footer-separator">&middot;</span> <span class="footer-text">Lecturer <a href="http://computing.dcu.ie/~dfitzpat">Dr. D&oacute;nal Fitzpatrick</a></span> <span class="footer-separator">&middot;</span> <span class="footer-text">
+     <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a>
+        </span> </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

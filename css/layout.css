@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* DON'T FORGET TO LOOK AT THE INSTRUCTIONS.MD FILE IN GITHUB */
+html {
+	font-family: "Open Sans", "Roboto" Helvetica, "Droid sans", sans-serif;
+	font-size: 100%;
+ }
+ /* Font-family gives an error when validating which seems to be a known bug. */
+
+/* These are some suggested groupings for your stylesheet... */
+/* box sizing */
+
+
+*, *:before, *:after {box-sizing: inherit;}
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+
+
+.header-content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  width: 90%;
+ }
+
+.contact-me.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+ }
+
+.image-gallery.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+ }
+
+
+.about-me.container {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 40px;
+  font-family: "Roboto";
+  margin-bottom: 5px;
+ }
+
+.work-experience.container {
+  width: 100%;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family: "Roboto"
+ }
+
+
+
+
+
+
+
+
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+ }
+
+.page-nav {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	width: 100%;
+ }
+
+.header-content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	width: 47%;
+ }
+
+.footer-content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+ }
+
+.container-content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+ }
+
+h1 {
+	color: #E5989B;
+	font-family: "Roboto";
+	font-size: 75px;
+	font-weight: 300;
+	width: 100%;
+ }
+
+p {
+	color: #FFB4A2;
+	font-family: "Open Sans"
+	width: 100%;
+ }
+
+h2 {
+	color: #E5989B;
+	font-family: "Roboto";
+	border-bottom: 1px solid #FFB4A2;
+	line-height: 0.1em;
+	margin: 10px 0 20px;
+	width: 100%;
+ }
+
+	h2 span {
+		background: #6D6875;
+		padding: 0 10px;
+	 }
+
+.contact-me.container {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-family: "Open Sans";
+ }
+
+.image-gallery.container {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-align: center;
+	font-family: "Open Sans";
+ }
+
+button {
+	background-color: #FFB4A2; /* Green */
+	border: none;
+	color: #6D6875;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block];
+	font-size: 16px;
+	width: 8%;
+	font-size: 100%;
+	font-family: "Roboto";
+	font-weight: Bold;
+ }
+
+	button:hover {background-color: #FFCDB2;}
+
+button[type=submit] {
+	width: 25%;
+	height: 20px;
+ }
+
+.submit:hover {background-color: #9EA79C;}
+
+/* flexible content images code */
+/* navigation (using flexbox) */
+/* page header */
+/* main layout */
+body {background-color: #6D6875;
+
+}
+
+
+
+
+.about-me.container {
+	width: 30%;
+	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+	padding-top: 40px;
+	font-family: "Roboto";
+	margin-bottom: 5px;
+ }
+
+.work-experience.container {
+	width: 40%;
+	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	font-family: "Roboto"
+ }
+
+a:link {color: #FFCDB2;}
+
+input, textarea {background-color: #FFD1B9;}
+
+
+/* image gallery media queries and size overrides */
+
+/* Image gallery from codepen. slightly edited. */
+
+.gallery {
+	width: 97%;
+	margin: 0 auto;
+	padding: 5px;
+	background: #B5838D;
+	box-shadow: 0 1px 2px rgba(0,0,0,.3);
+ }
+
+	.gallery > div {
+		position: relative;
+		float: left;
+		padding: 5px;
+	 }
+
+		.gallery > div > img {
+			display: block;
+			width: auto;
+			height: 200px;
+			transition: .1s transform;
+			transform: translateZ(0); /* hack */
+		 }
+
+		.gallery > div:hover {z-index: 1;}
+
+			.gallery > div:hover > img {
+				transform: scale(1.7,1.7);
+				transition: .3s transform;
+			 }
+
+.cf:before, .cf:after {
+	display: table;
+	content: "";
+	line-height: 0;
+ }
+
+.cf:after {clear: both;}
+
+/* form styling */
+/* footer */
+.page-footer {font-size: 14px;
+font-family: "Open Sans";}
+
+
+
+/* Edited full page border from CSSTricks */
+
+
+#left, #right {
+  background: #E5989B;
+  position: fixed;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+
