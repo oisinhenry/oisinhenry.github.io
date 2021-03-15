@@ -71,40 +71,58 @@ data.scscc:hover {
 
 <div class="grid">
     <div class="cell -3of12 content">
-        <img src="css/avatar.png" title = "image credit kilian harrison @strangedevelopments" alt="My Avatar">
         <br>
-
+<p>/ / / / / / / / / / / /</p>
     </div>
     <div class="cell -9of12 content">
         <h1>Oisín Henry</h1>
-        <h4>Computer Applications - Software Engineering undergrad</h4>
+        <h3>Education</h3>
+        
         <ul>
-            <li>In third year of degree</li>
-            <li>Emphasis on object oriented programming, data structures/algorithms</li>
-            <li>Currently searching for an SWE internship March - September 2020</li>
+            <li style="font-weight: bolder;">DCU - Computer Applications (Software Engineering)</li>
+            <li>Final Semester</li>
+            <li>Currently working on final year project</li>
+            <li>Searching for a full time SDE/Graduate position 2021</li>
           </ul>
-        <h5>Skills</h5>
+        <h3>Skills</h3>
         <ul>
-            <li>Proficient in Python</li>
-            <li>Comfortable with Java</li>
-            <li>Linux as a daily driver/work environment</li>
-            <li>Git version control</li>
-            <li>Data structures/algorithms, Object-oriented programming</li>
+            <li>Experienced in Python</li>
+            <li>Low level Linux work / sh scripting</li>
+            <li>Git version control / CI/CD pipelines</li>
+            <li>Comfortable with Java and frontend js frameworks</li>
 
         </ul>
 
-        <h5>Highlighted Projects</h5>
+        <h3>Projects</h3>
         <ul>
-            <li><a href="https://github.com/oisinhenry/myshell">MyShell</a> - Simple shell written in Python for a university assignment.</li>
+            <li><a href="https://gitlab.com/oisinhenry/bettertimetables">BetterTimetables</a> - Full stack timetable scraper university project</li>
         </ul>
 
-        <h5>Contact Me</h5>
+        <h3>Me</h3>
         <ul>
-            <li><a href="https://github.com/oisinhenry" rel="me">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/oisinhenry" rel="me">LinkedIn</a></li>
-            <li><a href="mailto:oisinhenry@gmail.com" rel="me">Email oisinhenry@gmail.com</a></li>
+            <li><a href ="mailto:oisinhenry@gmail.com" rel="me">Email <span id=p1>oisinhenry@gmail.com</span></a>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+                
+                <button style=" padding:0.2rem;" onclick="copyToClipboard('#p1')">copy email</button>
+                  
+                </li>
+
+
+                
             <li><a href="tel:+353873428060" rel="me">Phone (+353 87 342 8060)</a></li>
             <li><a href="files/oisinhenry_CV.pdf" download>Download my CV</a></li>
+        </ul>
+
+        <h3>Other Links</h3>
+        <ul>
+            <li><a href="https://www.gitlab.com/oisinhenry" rel="me">Gitlab</a></li>
+            <li><a href="https://github.com/oisinhenry" rel="me">GitHub (disused)</a></li>
+
+            <li><a href="https://www.linkedin.com/in/oisinhenry" rel="me">LinkedIn</a></li>
+
+
         </ul>
     </div>
 </div>
@@ -112,7 +130,7 @@ data.scscc:hover {
             </div>
 
             <footer>
-                <blockquote>2019 Oisín Henry.</blockquote>
+                <blockquote>2021 Oisín Henry.</blockquote>
                 <blockquote>uses modified gruvbox-dark.css</blockquote>
             </footer>
 
@@ -123,4 +141,14 @@ data.scscc:hover {
 
 
 
+
+<script>
+    function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
 </body></html>
